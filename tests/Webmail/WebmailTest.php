@@ -8,9 +8,9 @@ use Magium\Mail\Webmail\Messages;
 class WebmailTest extends AbstractTestCase
 {
 
-    protected $subjectContains = '145001694';
-    protected $recipient = 'w64EW9GSP781NmIzZDhkNDQ0OWIy@mail.magiumlib.com';
-    protected $subjectEquals = 'Madison Island: New Order # 145001694';
+    protected $subjectContains = '<subject contains something>';
+    protected $recipient = '<magium mail recipient';
+    protected $subjectEquals = '<full subject >';
 
     public function setUp()
     {
