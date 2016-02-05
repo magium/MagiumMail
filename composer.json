@@ -1,0 +1,27 @@
+{
+  "name": "magium/mail",
+  "description": "This package allows you to create one-off transactional emails to be used with Magium Selenium tests",
+  "keywords": ["magento", "selenium", "webdriver", "testing"],
+  "homepage": "http://www.magiumlib.com/",
+  "license": "ASL-2.0",
+  "authors": [
+    {
+      "name": "Kevin Schroeder",
+      "email": "kschroeder@mirageworks.com",
+      "homepage": "http://magiumlib.com/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "magium/magium": "0.0.47",
+    "zendframework/zend-http": "2.5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Magium\\Mail\\": "lib"
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}
