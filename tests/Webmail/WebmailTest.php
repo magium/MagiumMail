@@ -14,6 +14,7 @@ class WebmailTest extends AbstractTestCase
 
     public function setUp()
     {
+        self::markTestSkipped('This test requires individual configuration');
         parent::setUp();
     }
 
