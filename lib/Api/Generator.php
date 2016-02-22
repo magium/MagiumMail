@@ -28,31 +28,71 @@ class Generator extends \Magium\Util\EmailGenerator\Generator implements NameInt
         }
     }
 
+    /**
+     * Retrieves the pseudo first name
+     *
+     * @return mixed
+     */
+
     public function getFirstName()
     {
         return $this->firstName;
     }
+
+    /**
+     * Retrieves the pseudo last name
+     *
+     * @return mixed
+     */
+
 
     public function getLastName()
     {
         return $this->lastName;
     }
 
+    /**
+     * Sets the pseudo first name
+     *
+     * @param string $value
+     */
+
     public function setFirstName($value)
     {
         $this->firstName = $value;
     }
+
+    /**
+     * Sets the pseudo last name
+     *
+     * @param string $value
+     */
+
 
     public function setLastName($value)
     {
         $this->lastName = $value;
     }
 
+    /**
+     * Allows you to set an arbitrary API key
+     *
+     * @param $key
+     */
 
     public function setApiKey($key)
     {
         $this->configuration->setApiKey($key);
     }
+
+    /**
+     * Creates a new, unique email address from Magium Mail.
+     *
+     * @param string $domain Used in core Magium, ignored in Magium mail
+     * @return string The new email address
+     * @throws ErrorException If a server error occurred
+     * @throws InvalidResponseException If the email address is not provided by the server
+     */
 
     public function generate($domain = null)
     {
