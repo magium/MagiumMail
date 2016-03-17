@@ -5,4 +5,4 @@ An API for a service that allows you to include transactional emails as part of 
 composer require magium/mail
 ```
 
-Read more at [Magium](http://www.magiumlib.com/).
+[Find much more information at magiumlib.com](http://www.magiumlib.com/?utm_source=github&utm_medium=website&utm_campaign=social)
